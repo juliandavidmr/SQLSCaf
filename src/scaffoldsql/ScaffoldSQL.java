@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package scaffoldsql;
 
 import java.util.Scanner;
@@ -57,7 +52,8 @@ public class ScaffoldSQL {
 //                                      System.out.println("Tipo de atributo: " + tipoAtributo);
 
                                         scaf = scaf.concat(nombreAtributo + ":" + Traducir(tipoAtributo) + " ");
-                                    } else if (Comparar_cadena_Starts(sql, "REFERENCES")) {
+                                    } 
+                                    /*else if (Comparar_cadena_Starts(sql, "REFERENCES")) {
                                         // Sacando nombre de la tabla a la que se hace referencia
                                         System.out.println("Se encontro referencia");
                                         int index_bd_o_tabla1;
@@ -83,7 +79,7 @@ public class ScaffoldSQL {
                                             }
                                         }
                                         System.out.println("Nombre de la referencia: [" + ref + "]");
-                                    }
+                                    }*/
                                 }
                                 System.out.println("-----------------------------------------");
                                 System.out.println("Scaffold " + ++cant_scaffold + " + " + nombreTabla + ": [" + scaf + "]");
